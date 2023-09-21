@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root {
+  --color-green: #009e3b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+main{
+  max-width: 400px;
+  width: 70%;
+  background-color: var(--color-green);
+}
