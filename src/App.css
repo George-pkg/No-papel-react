@@ -1,16 +1,8 @@
 @charset "UTF-8";
 
-:root {
-  --color-green: #009e3b;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.center {
+/* BODY APP */
+.App {
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +11,79 @@
 }
 
 main{
-  max-width: 400px;
+  justify-content: center;
+  max-width: 350px;
   width: 70%;
-  background-color: var(--color-green);
+  background-color: var(--color-wihte-purple);
+  border-radius: 7px;
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* HEADER */
+img {
+  height: 80px;
+  max-width: 100px;
+  width: 90%;
+  border-radius: 100px;
+}
+
+/* FORM INPUT */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  height: 40px;
+  border-radius: 15px;
+  margin: 5px 0px;
+  border: solid rgb(214, 202, 202);
+  padding: 0px 0px 0px 10px;
+}
+
+@keyframes anima-color {
+  100% {
+    border-color: var(--color-blue);
+  }
+}
+
+input:hover {
+  animation: anima-color 1s both normal;
+}
+
+/* FORM BUTTON */
+button[type="summit"] {
+  width: 90%;
+  height: 40px;
+  border-radius: 15px;
+  background-color: var(--color-blue);
+  color: white;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* FOGOT PASSWORD */
+.Dice-pass {
+  display: flex;
+  margin: 10px 0px;
+  width: 90%;
+}
+
+label#save{
+  display: flex;
+  width: 50%;
+}
+
+label#forgot {
+  display: flex;
+  width: 50%;
+  flex-direction: row-reverse;
 }
