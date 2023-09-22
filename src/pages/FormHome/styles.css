@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
 /* BODY FORM */
+
+.body {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
 main{
     justify-content: center;
     max-width: 350px;
