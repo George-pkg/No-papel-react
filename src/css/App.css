@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* BODY APP */
+.App {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
