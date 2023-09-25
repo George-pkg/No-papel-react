@@ -1,0 +1,37 @@
+:root {
+    --dark-blue: #37517e;
+    --light-blue: #47b2e4;
+}
+
+.HeaderLayout {
+    width: 100%;
+    height: 60px;
+    padding: 5px 10px;
+    background-color: var(--dark-blue);
+    display: flex;
+}
+
+.logoHeader {
+    width: 50%;
+}
+
+.HeaderLayout nav {
+    display: flex;
+    width: 50%;
+    flex-direction: row-reverse;
+}
+
+.HeaderLayout ul {
+    display: flex;
+    list-style: none;
+    align-self: center;
+}
+
+.HeaderLayout li {
+    padding: 0px 10px;
+}
+
+.HeaderLayout a, .HeaderLayout h2 {
+    color: whitesmoke;
+}
+

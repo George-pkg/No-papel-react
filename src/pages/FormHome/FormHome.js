@@ -1,20 +1,19 @@
-import { useState } from 'react';
 import logo from '../../img/login.png'
 import './styles.css'
-import { BrowserRouter as Router, Witch, Route, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function FormHome() {
 
-    // visualizar o valor, alterar o valor
-    // const [valueInput, setValueInput] = useState("");
-
+    // MUdança da tela de login, 
+    const navigate = useNavigate();
     const login = (e) => {
-        e.preventDefault()
-        console.log('login')
+        e.preventDefault();
+        console.log('login');
+        return navigate("/HomePage");
     }
     
     const handleChange = (event) => {
-    console.log(event.target.value)
+        console.log(event.target.value)
     }
 
     return (
@@ -27,6 +26,7 @@ function FormHome() {
                 <button type="summit" onClick={login}>login</button>
                 </form>
 
+
                 <div className="Dice-pass">
                 <label id="save">
                     <input type="checkbox" name="save-password" id="save"/>
@@ -34,7 +34,7 @@ function FormHome() {
                 </label>
 
                 <label id="forgot">
-                    <a href="#">Forgot Password</a>
+                    <Link to="/ForgotPassword">Forgot Password</Link>
                 </label>
                 </div>
             </main>
