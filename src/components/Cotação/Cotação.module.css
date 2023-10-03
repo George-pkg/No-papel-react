@@ -1,0 +1,32 @@
+.form_res {
+    padding: 20px;
+    margin: 30px auto;
+    background-color: rgb(204, 204, 204);
+    width: 400px;
+    height: 250px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+
+.form_res select, .form_res option {
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.form_res button {
+    margin: 10px 80px;
+    height: 40px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.form_res input {
+    padding-left: 10px;
+    font-size: large;
+    height: 50px;
+    width: 90%;
+    border-radius: 12px;
+    border: solid #999797
+
+}
