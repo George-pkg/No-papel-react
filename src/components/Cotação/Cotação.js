@@ -11,7 +11,7 @@ export default function Cotação() {
 
 
     // requisição
-    const [Dolar, setDolar] = useState([]);
+    const [Dolar, setDolar] = useState(Number([]));
     useEffect(() => {
     AxiosInstance
             .get('USD-BRL')
@@ -50,24 +50,28 @@ export default function Cotação() {
     
     const Consult = (e) => {
         e.preventDefault()
-        
+        alert(typeof(Dolar))
     };
 
     var amostra = ''
     if(Sec == 'Dolar') {
         amostra = Dolar
+        // amostra = (`O resultado é ` + Number(Num * Sec))
     } else if(Sec == 'Euro') {
         amostra = Euro
     } else if(Sec == 'Biticoin') {
         amostra = Biticoin
-    } 
+    }
+
+    
       
     
     return (
         <form onSubmit={Consult} className={styles.form_res}>
-            <input type="number" onChange={(e) => setNum(e.target.value)}/>
+            <label>Trasforme Real em :</label>
+            <input type="number" placeholder="Valor para Tranformar" onChange={ e => setNum(e.target.valueAsNumber)}/>
             <select name="Moeda" onChange={ e => setSec(e.target.value)}>
-                <option value="" >Selecione</option>
+                <option value="" >Selecione Moeda</option>
                 <option value="Dolar" key="">Dolar</option>
                 <option value="Euro" key="">Euro</option>
                 <option value="Biticoin" key="">Biticoin</option>
@@ -75,7 +79,6 @@ export default function Cotação() {
             <button type="submit">clicar</button>
             <br/>
             {amostra}
-            {Num}
         </form>
     );
 };
