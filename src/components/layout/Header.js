@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css'
 
 export default function Header() {
     return (
         <header className={styles.HeaderLayout}>
             <div className={styles.logoHeader}>
-                <h2>No Papel</h2>
+                <Link to="/HomePage"><h2>No Papel</h2></Link>
             </div>
             <nav>
                 <ul>
@@ -12,13 +13,10 @@ export default function Header() {
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">API</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
+                        <a href="#">Documets</a>
                     </li>
                 </ul>
             </nav>

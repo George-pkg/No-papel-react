@@ -20,7 +20,7 @@ main{
 }
   
 /* HEADER */
-img {
+main img {
     height: 80px;
     max-width: 100px;
     width: 90%;

@@ -1,5 +1,5 @@
 :root {
-    --dark-blue: #37517e;
+    --dark-blue: rgb(55, 81, 126);
     --light-blue: #47b2e4;
 }
 
@@ -13,6 +13,7 @@
 
 .logoHeader {
     width: 50%;
+    align-self: center;
 }
 
 .HeaderLayout nav {
@@ -34,4 +35,5 @@
 .HeaderLayout a, .HeaderLayout h2 {
     color: whitesmoke;
 }
+
 

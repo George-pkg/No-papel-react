@@ -1,4 +1,4 @@
-import logo from '../../img/login.png'
+import logo from '../../assets/img/login.png'
 import './styles.css'
 import { useNavigate, Link } from 'react-router-dom';
 
