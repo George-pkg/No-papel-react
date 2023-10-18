@@ -1,0 +1,8 @@
+.erroPage {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    height: 100vw;
+    justify-content: center;
+}

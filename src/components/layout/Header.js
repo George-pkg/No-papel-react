@@ -16,7 +16,7 @@ export default function Header() {
                         <a href="#">API</a>
                     </li>
                     <li>
-                        <a href="#">Documets</a>
+                        <Link to={'/Documents'}>Documents</Link>
                     </li>
                 </ul>
             </nav>

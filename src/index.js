@@ -7,24 +7,42 @@ import FormHome from './pages/FormHome/FormHome.js';
 import FormNew from './pages/FormNew/FormNew';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import HomePage from './pages/HomePage/HomePage.js';
+import Documents from './pages/documents/Documents';
+import ErroPage from './helper/ErroPage/ErroPage';
 
 const router = createBrowserRouter([
+
   {
     path: "/",
-    element: <FormHome />,
-  },
-  {
-    path: "/FormNew",
-    element: <FormNew />
+    errorElement: <ErroPage />,
+    children: [
+      {
+        path: "/",
+        element: <FormHome />,
+      },
+      {
+        path: "ForgotPassword",
+        element: <ForgotPassword />
+      },
+      {
+        path: "/FormNew",
+        element: <FormNew />
+      },
+    ]
   },
   {
     path: "/HomePage",
     element: <HomePage />
   },
   {
-    path: "/ForgotPassword", 
-    element: <ForgotPassword />
+    path: "/Documents",
+    element: <Documents />
   },
+  {
+    path: "/documents/:id",
+    element: <FormNew />
+  }
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
