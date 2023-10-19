@@ -9,6 +9,7 @@ import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import HomePage from './pages/HomePage/HomePage.js';
 import Documents from './pages/documents/Documents';
 import ErroPage from './helper/ErroPage/ErroPage';
+import ID from './pages/documents/ID/ID';
 
 const router = createBrowserRouter([
 
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/documents/:id",
-    element: <FormNew />
+    element: <ID />
   }
   
 ]);

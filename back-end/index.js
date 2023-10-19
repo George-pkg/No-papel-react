@@ -31,7 +31,3 @@ app.get('/api/:filename', (req, res) => {
 app.listen(port, ()=> {
     console.log(`servidor iniciado na porta ${port}`)
 });
-
-
-
-
