@@ -10,10 +10,10 @@ export default function Header() {
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <Link to={'/HomePage'}>Home</Link>
                     </li>
                     <li>
-                        <a href="#">API</a>
+                        <Link to={''}>API</Link>
                     </li>
                     <li>
                         <Link to={'/Documents'}>Documents</Link>

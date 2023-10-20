@@ -5,13 +5,14 @@ export default function BoxHome({
     title = "",
     image = "",
     image_alt = 'Foto não carregada',
-    route = ""
+    route = "",
+
     
  }) {
     return (        
         <div className={styles.BoxHome}>
             <h3>{title}</h3>
-            <img src={'http://localhost:5000/' + image} alt={image_alt} />
+            <img src={image} alt={image_alt} />
             <button type='button'><Link to={route}>OPEN</Link></button>
         </div>
     );
