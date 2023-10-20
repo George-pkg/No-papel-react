@@ -11,7 +11,7 @@ export default function ListBox({PTget = ''}) {
         .then((res) => {
             setlistP(res.data)
         }) 
-    }, [])
+    }, [PTget])
     /*
     - modos de tranformar
         const itensList = Object.keys(listP).map(chave => listP[chave])
